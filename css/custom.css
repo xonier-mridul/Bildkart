@@ -740,7 +740,7 @@ header.main-header .header-sticky.active .container-fluid::before{
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	padding: 150px 30px 100px;
+	padding: 150px 30px 35px;
 	margin-top: -120px;
 	overflow: hidden;
 }
@@ -1182,6 +1182,133 @@ header.main-header .header-sticky.active .container-fluid::before{
 	transition: all 0.4s ease-in-out;
 }
 
+.success-box .icon-box,.success-boxes .icon-box {
+	background-image: linear-gradient(to right, var(--dark-color) 0%, var(--accent-color) 50%, var(--dark-color) 100%);
+    background-size: 200% auto;
+    border-radius: 50%;
+	height: 70px;
+	width: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
+	transition: all 0.4s ease-in-out;
+}
+
+.success-box:hover .icon-box{
+	background-position: right center;
+}
+.success-boxes:hover .icon-box{
+	background-position: right center;
+}
+
+.success-box .icon-box img{
+	max-width: 42px;
+}
+.success-boxes .icon-box img{
+	max-width: 42px;
+}
+
+.success-box{
+	display: flex ;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.success-boxes{
+	display: flex ;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.success-box:nth-child(2){
+	margin-top: -85px;
+}
+.success-boxes:nth-child(2){
+	margin-top: 85px;
+}
+
+
+.success-box h5,.success-boxes h5{
+	text-align: center;
+}
+
+
+.success-main-container{
+	background-image: linear-gradient(to right, var(--dark-color) 0%, var(--accent-color) 50%, var(--dark-color) 100%);
+    background-size: 200% auto;
+    border-radius: 50%;
+	height: 90px;
+	width: 90px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
+	transition: all 0.4s ease-in-out;
+	position: relative;
+	z-index: 2;
+}
+
+.success-main-container::before{
+	content:"";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	background-image: linear-gradient(to right, var(--dark-color) 0%, var(--accent-color) 50%, var(--dark-color) 100%);
+	animation: pulse 2s ease-out infinite;
+	
+}
+
+.success-main-container img{
+	max-width: 50px;
+}
+
+.success-main{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	gap: 20px;
+}
+
+.success-main  .icon-box{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   ;
+}
+
+.success-main h3{
+	font-size: 30px;
+	font-weight: 800;
+    background-image: linear-gradient(267.43deg, var(--accent-color) 4.95%, var(--dark-color) 97.92%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.success-box h5, .success-boxes h5{
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.icon-refresh-circle{
+	width: 100%;
+	display: flex ;
+	justify-content: center;
+	align-items: center;
+}
+
+.icon-refresh-circle img{
+	width: 100px;
+}
+
 .service-item:hover .icon-box{
 	background-position: right center;
 }
@@ -1481,6 +1608,8 @@ header.main-header .header-sticky.active .container-fluid::before{
 
 .pricing-benefit-list{
 	margin-top: 30px;
+	padding-top: 30px;
+	border-top: 1px solid #00000020;
 }
 
 .pricing-benefit-list ul{
@@ -1492,6 +1621,10 @@ header.main-header .header-sticky.active .container-fluid::before{
 	justify-content: space-evenly;
 	align-items: center;
 	gap: 15px 30px;
+}
+
+.icon-refresh-circle img{
+	animation: rotate 5s linear infinite;
 }
 
 .pricing-benefit-list ul li{
@@ -1801,7 +1934,7 @@ header.main-header .header-sticky.active .container-fluid::before{
 .company-growth-box{
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
+	align-items: start;
 	gap: 30px;
 	margin-top: 80px;
 }
@@ -4025,6 +4158,7 @@ header.main-header .header-sticky.active .container-fluid::before{
     background-color: var(--white-color);
     border-radius: 20px;
     padding: 40px;
+	box-shadow: 0px 0px 15px #0000001a;
 }
 
 .contact-us-title{
@@ -5954,5 +6088,30 @@ header.main-header .header-sticky.active .container-fluid::before{
         padding: 15px;
         margin-top: 10px;
     }
+}
+
+
+@keyframes pulse {
+	0%{
+		transform: scale(1);
+		opacity: 1;
+	}
+	100%{
+		transform: scale(1.5);
+		opacity: 0;
+	}
+}
+
+@keyframes rotate {
+	0%{
+		transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(180deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+	
 }
 

@@ -11751,3 +11751,13 @@ fieldset:disabled .btn {
   }
 }
 /*# sourceMappingURL=bootstrap.min.css.map */
+
+
+/* ----------------- MRIDUL CSS ----------------- */
+
+.success-container{
+  display: flex ;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 40px;
+}
