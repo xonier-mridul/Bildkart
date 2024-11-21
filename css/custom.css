@@ -1287,6 +1287,9 @@ header.main-header .header-sticky.active .container-fluid::before{
 	align-items: center;
 	
 	gap: 20px;
+	padding: 40px 40px 20px;
+    background: #4ed08514;
+    border-radius: 12px;
 }
 
 .success-main  .icon-box{
