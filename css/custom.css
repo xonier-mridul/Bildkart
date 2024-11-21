@@ -4456,6 +4456,11 @@ header.main-header .header-sticky.active .container-fluid::before{
 	display: none;
 }
 
+.supplier-header{
+	background:url(/images/supplier.jpg);
+	background-position: bottom center !important;
+}
+
 .botoverlayshow{
 	display: block;
 }
