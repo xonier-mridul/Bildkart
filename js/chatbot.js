@@ -1,0 +1,1 @@
+const chatbot = document.getElementById('chatbot');

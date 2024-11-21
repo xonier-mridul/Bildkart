@@ -4374,6 +4374,34 @@ header.main-header .header-sticky.active .container-fluid::before{
 	color: white;
 }
 
+
+.chatbotcontainer{
+	position: fixed;
+	bottom: 30px ;
+	right: 50px;
+	
+}
+
+.chatbot-flex{
+	display: flex ;
+	justify-content: start;
+	flex-d
+	align-items: end;
+}
+
+.chatbot.success-main-container{
+	height: 75px;
+	width: 75px;
+}
+.chatbot.success-main-container::before{
+	height: 75px;
+	width: 75px;
+}
+
+.chatbotcontainer{
+	max-width: 400px;
+}
+
 /************************************/
 /*** 	   31. 404 Page css       ***/
 /************************************/
