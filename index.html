@@ -48,14 +48,18 @@
 
     <!-- Header Start -->
     <header class="main-header">
+        <div id="botoverlay" class="botoverlay"></div>
         <div class="chatbotcontainer">
             <div class="chatbot-flex">
                 <div class="chatbotscreen">
-                    <div class="screenheader">B</div>
-                    <div class="screenmain"></div>
+                    <div class="screenheader">
+                        <h3>Bildkart</h3>
+                        <p id="headerpara">  </p>
+                    </div>
+                    <div id="screenmains" class="screenmain"></div>
                     <div class="screeninput">
-                        <input id="screenInput" type="text">
-                        <img src="" alt="">
+                        <input id="screenInput" type="text" placeholder="type here...">
+                        <span id="sendmsg"><img src="/images/paperplane.svg" alt="paperplane"></span>
                     </div>
 
                 </div>
@@ -1712,6 +1716,9 @@
     <script src="js/wow.js"></script>
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
+    <!-- Chatbot Custom js file -->
+
+    <script src="js/chatbot.js"></script>
 </body>
 
 </html>
