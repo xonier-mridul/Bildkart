@@ -1209,6 +1209,15 @@ header.main-header .header-sticky.active .container-fluid::before{
 	max-width: 42px;
 }
 
+.partners{
+	padding: 50px 0;
+}
+
+.partners .scrolling-content span img {
+    max-width: 100px;
+    margin-right: 40px;
+}
+
 .success-box{
 	display: flex ;
 	flex-direction: column;
@@ -1234,6 +1243,9 @@ header.main-header .header-sticky.active .container-fluid::before{
 	text-align: center;
 }
 
+.main-logo{
+	width: 150px;
+}
 
 .success-main-container{
 	background-image: linear-gradient(to right, var(--dark-color) 0%, var(--accent-color) 50%, var(--dark-color) 100%);
@@ -4356,6 +4368,10 @@ header.main-header .header-sticky.active .container-fluid::before{
 
 .appointment-form form .btn-default::before{
     display: none;
+}
+
+.footer-para{
+	color: white;
 }
 
 /************************************/
