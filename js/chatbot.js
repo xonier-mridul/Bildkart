@@ -7,6 +7,9 @@ const para = document.getElementById('headerpara');
 const Overlay = document.getElementById('botoverlay')
 
 const send = ()=>{
+    if (Input.value === ""){
+        return
+    }
     let div = document.createElement('div');
     div.classList = "message";
     div.innerText = Input.value ;
@@ -26,11 +29,10 @@ const send = ()=>{
 Send.addEventListener('click',send)
 
 chatbot.addEventListener('click', ()=>{
-    const minut = new Date().getMinutes()
-    const hours = new Date().getHours()
-    const newminut = minut <= 9 ? `0${minut}` : minut
-    const newhours = hours <= 9 ? `0${hours}` : hours
-
+    const minut = new Date().getMinutes();
+    const hours = new Date().getHours();
+    const newminut = minut <= 9 ? `0${minut}` : minut;
+    const newhours = hours <= 9 ? `0${hours}` : hours;
     let ampm = hours > 12 ? 'pm' : 'am';
     para.innerText = `we'll back today at ${newhours}:${newminut} ${ampm}`
     botcontainer.classList.toggle('chatbotscreenshow');
