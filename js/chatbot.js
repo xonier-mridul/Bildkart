@@ -23,7 +23,6 @@ const send = ()=>{
         botScreen.scrollTop = botScreen.scrollHeight
     }, 1200);
     botScreen.scrollTop = botScreen.scrollHeight
-
 }
 
 Send.addEventListener('click',send)
@@ -49,3 +48,21 @@ Overlay.addEventListener('click',()=>{
     botcontainer.classList.remove('chatbotscreenshow');
     Overlay.classList.remove('botoverlayshow');
 })
+
+const body = document.body;
+const height = body.scrollHeight;
+
+window.addEventListener('scroll',(e)=>{
+   const pageHeight = window.scrollY;
+   const overall = (pageHeight/height).toFixed(2);
+   const FinalHeight = overall*100;
+})
+
+// const body = document.body;
+// const html = document.documentElement;
+// const height = Math.max(body.scrollHeight, body.offsetHeight,
+//   html.clientHeight, html.scrollHeight, html.offsetHeight);
+// console.log(height)
+
+
+

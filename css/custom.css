@@ -1813,6 +1813,52 @@ header.main-header .header-sticky.active .container-fluid::before{
     color: var(--white-color);
 }
 
+.buyer-grid{
+	display: grid;
+	
+	grid-template-columns: 1fr 1fr ;
+	gap: 30px;
+}
+
+.buyer-grid-image{
+	width: 80px;
+	height: 80px;
+}
+
+.buyer-grid-title{
+	font-size: 22px;
+}
+
+.shade-icon{
+	position: relative;
+	width: 40px;
+	display: block;
+}
+.mb-zero{
+	margin-bottom: 0;
+}
+
+.footer-top-bg{
+	background-color: #FFFFFF;
+	padding: 40px;
+	border-radius: 10px;
+	margin-bottom: 100px;
+	display: flex;
+	align-items: center;
+}
+
+.shade-icon::before{
+	content: "";
+	position: absolute;
+	z-index: 10;
+	height: 12px;
+	width: 12px;
+	border-radius: 100%;
+	background: linear-gradient(267.43deg, var(--accent-color) 4.95%, var(--dark-color) 97.92%);
+}
+
+
+
 /************************************/
 /***     11. How We Work Css      ***/
 /************************************/
@@ -4482,10 +4528,7 @@ header.main-header .header-sticky.active .container-fluid::before{
 	color: white;
 	width: 80%;
 	align-self: flex-end;
-	/* display: -webkit-box;
-	 -webkit-line-clamp: 2; 
-	-webkit-box-orient: vertical;
-	overflow: hidden; */
+	
 }
 
 .botclass{

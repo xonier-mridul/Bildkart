@@ -132,12 +132,13 @@
     }
 
     MutationObserver.notSupported = true;
-
     MutationObserver.prototype.observe = function() {};
-
     return MutationObserver;
 
   })());
+
+
+
 
   getComputedStyle = this.getComputedStyle || function(el, pseudo) {
     this.getPropertyValue = function(prop) {
@@ -150,6 +151,8 @@
           return _char.toUpperCase();
         });
       }
+
+
       return ((ref = el.currentStyle) != null ? ref[prop] : void 0) || null;
     };
     return this;
@@ -230,11 +233,13 @@
           }
         }
       }
+
       if (!this.disabled()) {
         this.util().addEvent(this.config.scrollContainer || window, 'scroll', this.scrollHandler);
         this.util().addEvent(window, 'resize', this.scrollHandler);
         this.interval = setInterval(this.scrollCallback, 50);
       }
+
       if (this.config.live) {
         return new MutationObserver((function(_this) {
           return function(records) {
@@ -259,8 +264,11 @@
           childList: true,
           subtree: true
         });
+
       }
     };
+    
+  
 
     WOW.prototype.stop = function() {
       this.stopped = true;
@@ -291,6 +299,7 @@
       for (j = 0, len = ref.length; j < len; j++) {
         box = ref[j];
         if (indexOf.call(this.all, box) < 0) {
+        
           this.boxes.push(box);
           this.all.push(box);
           if (this.stopped || this.disabled()) {
