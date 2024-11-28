@@ -11761,3 +11761,7 @@ fieldset:disabled .btn {
   gap: 20px;
   padding-bottom: 40px;
 }
+
+.text-white{
+  color: #ffffff
+}
