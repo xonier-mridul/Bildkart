@@ -221,6 +221,7 @@
           results.push(box);
         }
         return results;
+
       }).call(this);
       if (this.boxes.length) {
         if (this.disabled()) {
