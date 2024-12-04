@@ -4583,7 +4583,7 @@ header.main-header .header-sticky.active .container-fluid::before{
     margin-right: 20px;
     transition: all 0.4s ease-in-out;
 	font-size: 14px;
-	curs
+	
 }
 
 .from-step-active{
@@ -4595,6 +4595,10 @@ header.main-header .header-sticky.active .container-fluid::before{
 
 .form-step-icons:hover{
 	background-position: right center;
+}
+
+.nav-active a{
+	color: #73ED7C !important;
 }
 
 
