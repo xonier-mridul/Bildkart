@@ -15,7 +15,7 @@ nextBtnOne.addEventListener('click', ()=>{
 });
 nextBtnTwo.addEventListener('click', ()=>{
     fromTwo.classList.add("d-none");
-    formThree.classList.remove("d-none")
+    formThree.classList.remove("d-none");
 })
 
 const secform = ()=>{
@@ -46,14 +46,15 @@ const handleChange = (e) =>{
    console.log(formData.compName)
 }
 
-const showThank = ()=>{
-    confirm('Thanks for your intrust');
-    window.location.href = "/";
-    return;
-}
+// const showThank = ()=>{
+//     confirm('Thanks for your intrust');
+//     window.location.href = "/";
+//     return;
+// }
 
 const handleSubmit = ()=>{
-    confirm('Thanks for your intrust');
-    window.location.href = "/trial.html";
+    let confirms = confirm('Thanks for your intrust');
+   
+    confirms ? window.location.href = "/membership.html" : alert("please confirm");
 }
 
