@@ -11765,3 +11765,7 @@ fieldset:disabled .btn {
 .text-white{
   color: #ffffff
 }
+
+.cursor-pointer{
+  cursor: pointer !important;
+}

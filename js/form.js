@@ -26,3 +26,31 @@ const firstform = ()=>{
     formOne.classList.remove('d-none');
 }
 
+
+// ---------- Handle Form Input --------------
+
+
+const compName = document.getElementById('compName')
+const lastName = document.getElementById("lname")
+
+const formData = {
+    compName: "",
+    lname: ""
+}
+
+const handleChange = (e) =>{
+   let {name, value} = e.target;
+   formData[name] = value;
+   console.log(formData.compName)
+}
+
+
+const showThank = ()=>{
+    confirm('Thanks for your intrust');
+    window.location.href = "/";
+    return
+}
+
+const handleSubmit = ()=>{
+
+}
