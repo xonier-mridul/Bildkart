@@ -1,3 +1,5 @@
+
+
 const nextBtnOne = document.getElementById('next-btn-one');
 const nextBtnTwo = document.getElementById('next-btn-two');
 const formOne = document.getElementById('form-step-one');
@@ -44,13 +46,14 @@ const handleChange = (e) =>{
    console.log(formData.compName)
 }
 
-
 const showThank = ()=>{
     confirm('Thanks for your intrust');
     window.location.href = "/";
-    return
+    return;
 }
 
 const handleSubmit = ()=>{
-
+    confirm('Thanks for your intrust');
+    window.location.href = "/trial.html";
 }
+
