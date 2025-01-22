@@ -87,7 +87,7 @@
                         </div>
                         <!-- Header Btn Start -->
                         <div class="header-btn d-inline-flex gap-3">
-                            <a href="quote.html" class="btn-default">get a quote</a>
+                            <a href="#" class="btn-default">get a quote</a>
                             <a href="#" class="btn-default">Register</a>
 
                         </div>
@@ -110,12 +110,12 @@
                     <div class="col-lg-12">
                         <!-- Page Header Content Start -->
                         <div class="page-header-content">
-                            <h1 class="wow fadeInUp">Become a <span>Buyer</span></h1>
+                            <h1 class="wow fadeInUp">Get a <span>Quote</span></h1>
                             <nav class="wow fadeInUp" data-wow-delay="0.25s">
                                 <ol class="breadcrumb">
                                     
                                     <li class="breadcrumb-item"><a href="index.html">home</a></li>
-                                    
+
                                 </ol>
                             </nav>
                         </div>
@@ -148,8 +148,8 @@
                         <div class="team-member-info">
                             <!-- Team Info Header Start -->
                             <div class="team-info-header">
-                                <h3 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;"> Become a buyer </h3>
-                                <h2 class="wow fadeInUp" data-wow-delay="0.25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInUp;">Why Buyers Choose BildKart</h2>
+                                <h3 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;"> Get a Quote </h3>
+                                <h2 class="wow fadeInUp" data-wow-delay="0.25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInUp;">Request Your Custom Quote Today</h2>
                             </div>
                             <!-- Team Info Header End -->
 
@@ -166,42 +166,75 @@
                         <!-- Team Member Information End -->
 
                         <!-- Team Member Experience Start -->
-                        <div class="team-member-experience">
-                            <!-- Section Title Start -->
-                            <div class="section-title">
-                                <h2 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Simplify Your <span> Procurement</span></h2>
+                        <div style="margin-bottom: 70px;" class="contact-us-form">
+                            <!-- Contact Us Title Start -->
+                            <div class="contact-us-title">
+                                <h3 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">send a Quote</h3>
+                                <p class="wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">Unlock your potential with expert guidance! Schedule a free consultation toward personal and business success.</p>
                             </div>
-                            <div class="grid buyer-grid">
-                                <div class="d-flex justify-content-start align-items-start flex-column row-gap-4">
-                                    <div>
-                                        <img class="buyer-grid-image"  src="/images/order.png" alt="order">
-
+                            <!-- Contact Us Title End -->
+    
+                            <!-- Contact Us Form Start -->
+                            <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp" data-wow-delay="0.4s" novalidate="true" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                                <div class="row">
+                                    <div class="form-group col-md-6 mb-4">
+                                        <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name" required="">
+                                        <div class="help-block with-errors"></div>
                                     </div>
-                                    <h4 style="color: #042a2dbf;" class="buyer-grid-title ">Quick and easy to order the material you need</h4>
-                                </div>
-                                <div class="d-flex justify-content-start align-items-start flex-column row-gap-4">
-                                    <div>
-                                        <img class="buyer-grid-image"  src="/images/delivery-time.png" alt="order">
-
+    
+                                   
+    
+                                    <div class="form-group col-md-6 mb-4">
+                                        <input type="email" name="email" class="form-control" id="email" placeholder="Email Address" required="">
+                                        <div class="help-block with-errors"></div>
                                     </div>
-                                    <h4 style="color: #042a2dbf;" class="buyer-grid-title">Receive your material at the right time</h4>
-                                </div>
-                                <div class="d-flex justify-content-start align-items-start flex-column row-gap-4">
-                                    <div>
-                                        <img class="buyer-grid-image"  src="/images/idea-organization.png" alt="order">
-
+                                    
+                                    <div class="form-group col-md-6 mb-4 has-error has-danger">
+                                        <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone Number" required="">
+                                        <div class="help-block with-errors"><ul class="list-unstyled"><li>Please fill out this field.</li></ul></div>
                                     </div>
-                                    <h4 style="color: #042a2dbf;" class="buyer-grid-title">Easy management of your material orders</h4>
-                                </div>
-                                <div class="d-flex justify-content-start align-items-start flex-column row-gap-4">
-                                    <div>
-                                        <img class="buyer-grid-image"  src="/images/worldwide-delivery.png" alt="order">
 
+                                    <div class="form-group col-md-6 mb-4">
+                                        <input type="text" name="companyName" class="form-control" id="companyName" placeholder="Company Name" required="">
+                                        <div class="help-block with-errors"></div>
                                     </div>
-                                    <h4 style="color: #042a2dbf;" class="buyer-grid-title">Easy management of logistics</h4>
+                                    <div class="form-group col-md-6 mb-4">
+                                        <select name="budget" id="budget" class="form-control">
+                                            <option value="" hidden>Budget Range</option>
+                                            <option value="1 Lac - 10 Lac">1 Lac - 10 Lac</option>
+                                            <option value="10 Lac - 50 Lac">10 Lac - 50 Lac</option>
+                                            <option value="50 Lac - 1 Crore">50 Lac - 1 Crore</option>
+                                            <option value="1 Crore - 5 Crore">1 Crore - 5 Crore</option>
+                                            <option value="5 Crore - 10 Crore">5 Crore - 10 Crore</option>
+                                            <option value="10 Crore - 20 Crore">10 Crore - 20 Crore</option>
+                                            <option value="20 Crore - 50 Crore">20 Crore - 50 Crore</option>
+                                           
+                                        </select>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group col-md-6 mb-4">
+                                        <input type="number" name="zipcode" class="form-control" id="zipcode" placeholder="Zip Code" required="">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group col-md-12 mb-4">
+                                        <input type="file" name="documents" class="form-control" id="documents" placeholder="Documents" required="">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+    
+                                    <div class="form-group col-md-12 mb-5">
+                                        <textarea name="message" class="form-control" id="message" rows="4" placeholder="Message"></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+    
+                                    <div class="col-lg-12">
+                                        <div class="contact-form-btn">
+                                            <button type="submit" class="btn-default disabled">submit message</button>
+                                            <div id="msgSubmit" class="h3 hidden"></div>
+                                        </div>
+                                    </div>
                                 </div>
-
-                            </div>
+                            </form>
+                            <!-- Contact Us Form End -->
                         </div>
                         <!-- Team Member Experience End -->
 
@@ -209,7 +242,7 @@
                         <div class="team-member-contect pb-4">
                             <!-- Section Title Start -->
                             <div class="section-title">
-                                <h2 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Our Keyfeatures for <span>Buyers</span></h2>
+                                <h2 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Our Key <span>Features</span></h2>
                                 <p class="wow fadeInUp" data-wow-delay="0.25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInUp;">I'm here to support your journey towards personal and professional growth! Whether you have questions about my coaching services.</p>
                             </div>
                             <div class="d-flex align-items-center gap-4 pb-3">
@@ -230,8 +263,10 @@
                             
                             <!-- Section Btn Start --> 
                         </div>
-                        <div class="w-50 d-flex justify-content-start"> <a href="/Joinasbuyer.html" class="btn-default"> Register as Buyer </a> </div>
-                        <!-- Team Member Contect Start -->
+                        
+                    </div>
+                    <div style="display: flex ; justify-content: end; padding: 11px; border-radius: 14px;">
+                        <a class="btn-default" href="/index.html"> Back to home </a>
                     </div>
                     
                     <!-- Team Single Content End -->
@@ -239,15 +274,7 @@
             </div>
         </div>
     </div>
-    <!-- <div class="container footer-top-bg">
-        <div class="w-50"><div class="section-title  mb-2">
-            <h2 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp; font-size: 40px;">Subscribe to <span> BildKart</span></h2>
-        </div>
-        <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae inventore fugit mollitia animi, cumque temporibus repellat nesciunt laborum tempore nemo veritatis tenetur, deserunt sequi?</p></div>
-        
-
-    </div> -->
-
+    
     <!-- Footer Start -->
     <footer class="main-footer bg-section">
         <div class="container">

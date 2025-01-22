@@ -46,11 +46,7 @@ const handleChange = (e) =>{
    console.log(formData.compName)
 }
 
-// const showThank = ()=>{
-//     confirm('Thanks for your intrust');
-//     window.location.href = "/";
-//     return;
-// }
+
 
 const handleSubmit = ()=>{
     let confirms = confirm('Thanks for your intrust');
